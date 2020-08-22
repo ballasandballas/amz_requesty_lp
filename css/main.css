@@ -78,3 +78,112 @@
   src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3gnD_vx3rCs.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
+/* Testimonials */
+.testimonial {
+  min-height: 180px;
+}
+
+.testimonial cite {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .testimonial {
+    min-height: 220px;
+  }
+}
+
+.testimonial__portrait {
+  display: block;
+  width: 25%;
+  max-width: 50px;
+  float: left;
+}
+
+.testimonial__portrait img {
+  border-radius: 100%;
+  width: 100%;
+  height: auto;
+  margin-right: 15px;
+}
+
+.testimonial__details {
+  display: block;
+  width: 75%;
+  padding-left: 15px;
+  float: left;
+  margin-top: 1rem;
+}
+
+.testimonial__name {
+  font-style: normal;
+}
+
+.testimonial__source {
+  font-style: normal;
+}
+
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 17.5px;
+  border-left: 5px solid #eeeeee;
+}
+
+blockquote p:last-child,
+blockquote ul:last-child,
+blockquote ol:last-child {
+  margin-bottom: 0;
+}
+
+blockquote footer,
+blockquote small,
+blockquote .small {
+  display: block;
+  font-size: 80%;
+  line-height: 1.428571429;
+  color: #777777;
+}
+
+blockquote footer:before,
+blockquote small:before,
+blockquote .small:before {
+  content: '\2014 \00A0';
+}
+
+.blockquote-reverse,
+blockquote.pull-right {
+  padding-right: 15px;
+  padding-left: 0;
+  border-right: 5px solid #eeeeee;
+  border-left: 0;
+  text-align: right;
+}
+
+.blockquote-reverse footer:before,
+.blockquote-reverse small:before,
+.blockquote-reverse .small:before,
+blockquote.pull-right footer:before,
+blockquote.pull-right small:before,
+blockquote.pull-right .small:before {
+  content: '';
+}
+
+.blockquote-reverse footer:after,
+.blockquote-reverse small:after,
+.blockquote-reverse .small:after,
+blockquote.pull-right footer:after,
+blockquote.pull-right small:after,
+blockquote.pull-right .small:after {
+  content: '\00A0 \2014';
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
