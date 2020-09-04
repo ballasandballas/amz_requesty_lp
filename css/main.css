@@ -102,6 +102,27 @@ a.nav-button {
   font-weight:700;
 }
 
+/* Container sizes */
+.container,.container-lrg,.container-sml {
+  margin:auto;
+  position:relative;
+  width:100%
+}
+.container-lrg {
+  max-width:1020px
+}
+.container {
+  max-width:780px
+}
+.container-sml {
+  max-width:470px
+}
+.section {
+  padding:60px 0;
+  overflow:hidden;
+  position:relative
+}
+
 /* Testimonials */
 .testimonial {
   min-height: 180px;
@@ -211,10 +232,6 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.container {
-  max-width: 1070px;
-}
-
 .pricing-header {
   max-width: 700px;
 }
@@ -228,16 +245,31 @@ hr {
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
+.pricing-plan .card-header {
+  text-align: center;
+}
+
+.pricing-plan .card-title {
+  text-align: center;
+}
 
 .pricing-plan .plan-contents i.fa.fa-check {
   color: #01d8fd;
   /* float: left; */
 }
 
-.pricing-plan .plan-contents ul li {
-  padding:10px 17px;
+.pricing-plan li abbr a {
+  color: #01d8fd;
+}
+
+.pricing-plan .plan-contents li {
+  padding:5px 10px;
   font-size:15px;
   letter-spacing: -0.2px;
   border-bottom:1px solid #eee;
   line-height:1.5;
+}
+
+.pricing-plan button a {
+  text-decoration: none;
 }

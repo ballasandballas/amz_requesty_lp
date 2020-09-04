@@ -10,10 +10,9 @@
     <meta name="description" content="Request and keep track of reviews far quicker">
     <meta property="og:image" content="">
     <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="css/fontawesome-5.14.0/css/all.min.css" type="text/css">
-    <!-- <link rel="stylesheet"  href="css/bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://getbootstrap.com/docs/4.0/examples/pricing/pricing.css" rel="stylesheet"> -->
+    <!-- Load Font Awesome icons from a CDN -->
+    <script src="https://use.fontawesome.com/866815d55d.js"></script>
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/AllTemplates.min.css">
@@ -82,6 +81,7 @@
     </div>
     </div>
     <div class="lightblue-gradient">
+      <!---->
       <header class="header">
         <div class="container-lrg">
           <div class="flex col-12 spread">
@@ -397,199 +397,270 @@
     <section id="pricing-6" class="section lightblue-white" sitemeta="[object Object]" activepage="Landing">
       <div class="container mb75">
         <div class="col-12 text-center">
-          <h4 class="heading primary-color launchaco-builder-hoverable">Taxomator pricing for Amazon sellers</h4>
+          <h4 class="heading primary-color launchaco-builder-hoverable">Subscription plans</h4>
           <p class="paragraph secondary-color launchaco-builder-hoverable">Choose a pricing plan that's right for your Amazon business, and try it for free.
             You can switch plans at any time - or request a custom plan by contacting us directly.</p>
         </div>
+        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-month-tab" data-toggle="pill" href="#pills-month" role="tab" aria-controls="pills-month" aria-selected="true">Billed monthly</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-annual-tab" data-toggle="pill" href="#pills-annual" role="tab" aria-controls="pills-annual" aria-selected="false">Billed annually (20% off)</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-month" role="tabpanel" aria-labelledby="pills-month-tab">
+              <div class="card-deck mb-3">
+                <div class="pricing-plan card mb-3 box-shadow">
+                  <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Aspiring</h4>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h1 class="card-title pricing-card-title">$5.99 <small class="text-muted">/ mo</small></h1>
+                    <ul class="plan-contents list-unstyled mt-3 mb-4">
+                      <li><i class="fa fa-check"></i> Up to 200 orders / month</li>
+                      <li><i class="fa fa-check"></i> 1 Amazon marketplace
+                        <abbr data-toggle="tooltip" data-placement="top" title="For example, one of Amazon.com, Amazon.ca or Amazon.co.uk.">
+                          <img src="img/icon-abbr-info.svg" width="15" height="15" />
+                        </abbr>
+                      </li>
+                      <li><i class="fa fa-check"></i> Standard support</li>
+                    </ul>
+                    <button type="button" class="mt-auto btn btn-lg btn-block btn-primary"><a target="_blank" href="https://app.arequesty.com/app/billing">Get Started</a></button>
+                  </div>
+                </div>
+                <div class="pricing-plan card mb-3 box-shadow">
+                  <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Starter</h4>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h1 class="card-title pricing-card-title">$14.99 <small class="text-muted">/ mo</small></h1>
+                    <ul class="plan-contents list-unstyled mt-3 mb-4">
+                      <li><i class="fa fa-check"></i> Up to 1,000 orders / month</li>
+                      <li><i class="fa fa-check"></i> 1 region
+                        <abbr data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Amazon sellers typically have one <a href='https://sellercentral.amazon.com/gp/help/G48321' target='_blank'>merchant ID</a> per seller account, and one seller account per Amazon region. Amazon regions are North America, Europe, East Asia.">
+                          <img src="img/icon-abbr-info.svg" width="15" height="15">
+                        </abbr>
+                      </li>
+                      <li><i class="fa fa-check"></i> Unlimited marketplaces per region
+                        <abbr data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="<a href='https://docs.developer.amazonservices.com/en_US/dev_guide/DG_Endpoints.html' target='_blank'>Amazon's regions</a> are North America, Europe and Far East.">
+                          <img src="img/icon-abbr-info.svg" width="15" height="15" />
+                        </abbr>
+                      </li>
+                      <li><i class="fa fa-check"></i> Standard support</li>
+                    </ul>
+                    <button type="button" class="mt-auto btn btn-lg btn-block btn-primary"><a target="_blank" href="https://app.arequesty.com/app/billing">Get Started</a></button>
+                  </div>
+                </div>
+                <div class="pricing-plan card mb-3 box-shadow">
+                  <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">International</h4>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h1 class="card-title pricing-card-title">$24.99 <small class="text-muted">/ mo</small></h1>
+                    <ul class="plan-contents list-unstyled mt-3 mb-4">
+                      <li><i class="fa fa-check"></i> Up to 5,000 orders / month</li>
+                      <li><i class="fa fa-check"></i> 2 regions
+                        <abbr data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Amazon sellers typically have one <a href='https://sellercentral.amazon.com/gp/help/G48321' target='_blank'>merchant ID</a> per seller account, and one seller account per Amazon region. Amazon regions are North America, Europe, East Asia.">
+                          <img src="img/icon-abbr-info.svg" width="15" height="15">
+                        </abbr>
+                      </li>
+                      <li><i class="fa fa-check"></i> Unlimited marketplaces per region
+                        <abbr data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="<a href='https://docs.developer.amazonservices.com/en_US/dev_guide/DG_Endpoints.html' target='_blank'>Amazon's regions</a> are North America, Europe and Far East.">
+                          <img src="img/icon-abbr-info.svg" width="15" height="15" />
+                        </abbr>
+                      </li>
+                      <li><i class="fa fa-check"></i> Free setup for past transactions
+                        <abbr data-toggle="tooltip" data-placement="top" title="We'll help you retrieve the maximum transaction history based on what Amazon allows.">
+                          <img src="img/icon-abbr-info.svg" width="15" height="15" />
+                        </abbr>
+                      </li>
+                      <li><i class="fa fa-check"></i> Standard support</li>
+                    </ul>
+                    <button type="button" class="mt-auto btn btn-lg btn-block btn-primary"><a target="_blank" href="https://app.arequesty.com/app/billing">Get Started</a></button>
+                  </div>
+                </div>
+                <div class="pricing-plan card mb-3 box-shadow">
+                  <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Premium</h4>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h1 class="card-title pricing-card-title">$47.99 <small class="text-muted">/ mo</small></h1>
+                    <ul class="plan-contents list-unstyled mt-3 mb-4">
+                      <li><i class="fa fa-check"></i> Unlimited orders / month</li>
+                      <li><i class="fa fa-check"></i> 3 regions
+                        <abbr data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Amazon sellers typically have one <a href='https://sellercentral.amazon.com/gp/help/G48321' target='_blank'>merchant ID</a> per seller account, and one seller account per Amazon region. Amazon regions are North America, Europe, East Asia.">
+                          <img src="img/icon-abbr-info.svg" width="15" height="15">
+                        </abbr>
+                      </li>
+                      <li><i class="fa fa-check"></i> Unlimited marketplaces per region
+                        <abbr data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="<a href='https://docs.developer.amazonservices.com/en_US/dev_guide/DG_Endpoints.html' target='_blank'>Amazon's regions</a> are North America, Europe and Far East.">
+                          <img src="img/icon-abbr-info.svg" width="15" height="15" />
+                        </abbr>
+                      </li>
+                      <li><i class="fa fa-check"></i> Free setup for past transactions
+                        <abbr data-toggle="tooltip" data-placement="top" title="We'll help you retrieve the maximum transaction history based on what Amazon allows.">
+                          <img src="img/icon-abbr-info.svg" width="15" height="15" />
+                        </abbr>
+                      </li>
+                      <li><i class="fa fa-check"></i> 24/7, priority support</li>
+                      <li><i class="fa fa-check"></i> One-on-one onboarding support</li>
+                      <li><i class="fa fa-check"></i> Custom integration to your own accounting software
+                        <abbr data-toggle="tooltip" data-placement="top" title="Use an accounting software different than what we support? Just name it and we'll add support to it in no time.">
+                          <img src="img/icon-abbr-info.svg" width="15" height="15" />
+                        </abbr>
+                      </li>
+                    </ul>
+                    <button type="button" class="mt-auto btn btn-lg btn-block btn-primary"><a target="_blank" href="https://app.arequesty.com/app/billing">Get Started</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-annual" role="tabpanel" aria-labelledby="pills-annual-tab">
+              <div class="card-deck mb-3">
+                <div class="pricing-plan card mb-3 box-shadow">
+                  <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Aspiring</h4>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h1 class="card-title pricing-card-title">$4.99 <small class="text-muted">/ mo</small></h1>
+                    <ul class="plan-contents list-unstyled mt-3 mb-4">
+                      <li><i class="fa fa-check"></i> Up to 200 orders / month</li>
+                      <li><i class="fa fa-check"></i> 1 Amazon marketplace
+                        <abbr data-toggle="tooltip" data-placement="top" title="For example, one of Amazon.com, Amazon.ca or Amazon.co.uk.">
+                          <img src="img/icon-abbr-info.svg" width="15" height="15" />
+                        </abbr>
+                      </li>
+                      <li><i class="fa fa-check"></i> Standard support</li>
+                    </ul>
+                    <button type="button" class="mt-auto btn btn-lg btn-block btn-primary"><a target="_blank" href="https://app.arequesty.com/app/billing">Get Started</a></button>
+                  </div>
+                </div>
+                <div class="pricing-plan card mb-3 box-shadow">
+                  <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Starter</h4>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h1 class="card-title pricing-card-title">$12.49 <small class="text-muted">/ mo</small></h1>
+                    <ul class="plan-contents list-unstyled mt-3 mb-4">
+                      <li><i class="fa fa-check"></i> Up to 1,000 orders / month</li>
+                      <li><i class="fa fa-check"></i> 1 region
+                        <abbr data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Amazon sellers typically have one <a href='https://sellercentral.amazon.com/gp/help/G48321' target='_blank'>merchant ID</a> per seller account, and one seller account per Amazon region. Amazon regions are North America, Europe, East Asia.">
+                          <img src="img/icon-abbr-info.svg" width="15" height="15">
+                        </abbr>
+                      </li>
+                      <li><i class="fa fa-check"></i> Unlimited marketplaces per region
+                        <abbr data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="<a href='https://docs.developer.amazonservices.com/en_US/dev_guide/DG_Endpoints.html' target='_blank'>Amazon's regions</a> are North America, Europe and Far East.">
+                          <img src="img/icon-abbr-info.svg" width="15" height="15" />
+                        </abbr>
+                      </li>
+                      <li><i class="fa fa-check"></i> Standard support</li>
+                    </ul>
+                    <button type="button" class="mt-auto btn btn-lg btn-block btn-primary"><a target="_blank" href="https://app.arequesty.com/app/billing">Get Started</a></button>
+                  </div>
+                </div>
+                <div class="pricing-plan card mb-3 box-shadow">
+                  <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">International</h4>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h1 class="card-title pricing-card-title">$19.99 <small class="text-muted">/ mo</small></h1>
+                    <ul class="plan-contents list-unstyled mt-3 mb-4">
+                      <li><i class="fa fa-check"></i> Up to 5,000 orders / month</li>
+                      <li><i class="fa fa-check"></i> 2 regions
+                        <abbr data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Amazon sellers typically have one <a href='https://sellercentral.amazon.com/gp/help/G48321' target='_blank'>merchant ID</a> per seller account, and one seller account per Amazon region. Amazon regions are North America, Europe, East Asia.">
+                          <img src="img/icon-abbr-info.svg" width="15" height="15">
+                        </abbr>
+                      </li>
+                      <li><i class="fa fa-check"></i> Unlimited marketplaces per region
+                        <abbr data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="<a href='https://docs.developer.amazonservices.com/en_US/dev_guide/DG_Endpoints.html' target='_blank'>Amazon's regions</a> are North America, Europe and Far East.">
+                          <img src="img/icon-abbr-info.svg" width="15" height="15" />
+                        </abbr>
+                      </li>
+                      <li><i class="fa fa-check"></i> Free setup for past transactions
+                        <abbr data-toggle="tooltip" data-placement="top" title="We'll help you retrieve the maximum transaction history based on what Amazon allows.">
+                          <img src="img/icon-abbr-info.svg" width="15" height="15" />
+                        </abbr>
+                      </li>
+                      <li><i class="fa fa-check"></i> Standard support</li>
+                    </ul>
+                    <button type="button" class="mt-auto btn btn-lg btn-block btn-primary"><a target="_blank" href="https://app.arequesty.com/app/billing">Get Started</a></button>
+                  </div>
+                </div>
+                <div class="pricing-plan card mb-3 box-shadow">
+                  <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Premium</h4>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <h1 class="card-title pricing-card-title">$39.99 <small class="text-muted">/ mo</small></h1>
+                    <ul class="plan-contents list-unstyled mt-3 mb-4">
+                      <li><i class="fa fa-check"></i> Unlimited orders / month</li>
+                      <li><i class="fa fa-check"></i> 3 regions
+                        <abbr data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="Amazon sellers typically have one <a href='https://sellercentral.amazon.com/gp/help/G48321' target='_blank'>merchant ID</a> per seller account, and one seller account per Amazon region. Amazon regions are North America, Europe, East Asia.">
+                          <img src="img/icon-abbr-info.svg" width="15" height="15">
+                        </abbr>
+                      </li>
+                      <li><i class="fa fa-check"></i> Unlimited marketplaces per region
+                        <abbr data-toggle="tooltip" data-placement="top" data-html="true" title="" data-original-title="<a href='https://docs.developer.amazonservices.com/en_US/dev_guide/DG_Endpoints.html' target='_blank'>Amazon's regions</a> are North America, Europe and Far East.">
+                          <img src="img/icon-abbr-info.svg" width="15" height="15" />
+                        </abbr>
+                      </li>
+                      <li><i class="fa fa-check"></i> Free setup for past transactions
+                        <abbr data-toggle="tooltip" data-placement="top" title="We'll help you retrieve the maximum transaction history based on what Amazon allows.">
+                          <img src="img/icon-abbr-info.svg" width="15" height="15" />
+                        </abbr>
+                      </li>
+                      <li><i class="fa fa-check"></i> 24/7, priority support</li>
+                      <li><i class="fa fa-check"></i> One-on-one onboarding support</li>
+                      <li><i class="fa fa-check"></i> Custom integration to your own accounting software
+                        <abbr data-toggle="tooltip" data-placement="top" title="Use an accounting software different than what we support? Just name it and we'll add support to it in no time.">
+                          <img src="img/icon-abbr-info.svg" width="15" height="15" />
+                        </abbr>
+                      </li>
+                    </ul>
+                    <button type="button" class="mt-auto btn btn-lg btn-block btn-primary"><a target="_blank" href="https://app.arequesty.com/app/billing">Get Started</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="container mb75">
+        <div class="col-12 text-center">
+          <h4 class="heading primary-color launchaco-builder-hoverable">One-time tasks</h4>
+          <p class="paragraph secondary-color launchaco-builder-hoverable">Need for us to take care of some other accounting tasks for you? Just let us know and we'll help you in no time.</p>
+        </div>
         <div class="card-deck mb-3">
-          <div class="card mb-3 box-shadow">
+          <div class="pricing-plan card mb-3 box-shadow">
             <div class="card-header">
-              <h4 class="my-0 font-weight-normal">Free</h4>
+              <h4 class="my-0 font-weight-normal">Retrieve old transaction history</h4>
             </div>
             <div class="card-body d-flex flex-column">
-              <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+              <h1 class="card-title pricing-card-title">$74.99 <small class="text-muted">/ one-time</small></h1>
               <ul class="plan-contents list-unstyled mt-3 mb-4">
-                <li>10 users included</li>
-                <li>2 GB of storage</li>
+                <li>By default, Amazon only allows fetching reports from 3 months ago. Want to get reports from the beginning of the year, or even before that? We'll help you retrieve the <span class="font-italic">maximum transaction history</span> based on what Amazon allows.</li>
+                <li><span class="font-weight-bold">FREE</span> for annual accounts.</li>
               </ul>
-              <button type="button" class="mt-auto btn btn-lg btn-block btn-primary">Sign up for free</button>
+              <button type="button" class="mt-auto btn btn-lg btn-block btn-primary"><a target="_blank" href="https://m.me/arequesty">Contact Us</a></button>
             </div>
           </div>
-          <div class="card mb-3 box-shadow">
+          <div class="pricing-plan card mb-3 box-shadow">
             <div class="card-header">
-              <h4 class="my-0 font-weight-normal">Pro</h4>
+              <h4 class="my-0 font-weight-normal">FBA stock value report</h4>
             </div>
             <div class="card-body d-flex flex-column">
-              <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+              <h1 class="card-title pricing-card-title">$17.99 <small class="text-muted">/ report</small></h1>
               <ul class="plan-contents list-unstyled mt-3 mb-4">
-                <li>20 users included</li>
-                <li>10 GB of storage</li>
-                <li>Priority email support</li>
-                <li>Help center access</li>
-                <li>Email support</li>
-                <li>Email support</li>
-                <li>Email support</li>
-                <li>Email support</li>
-                <li>Email support</li>
+                <li>Israeli tax authorities require generating stock value reports <span class="font-italic">twice a year</span>. Let our software spare 60 valuable minutes of your life with accurate, instant reporting.</li>
+                <li><span class="font-weight-bold">FREE</span> for annual accounts.</li>
               </ul>
-              <button type="button" class="mt-auto btn btn-lg btn-block btn-primary">Get started</button>
-            </div>
-          </div>
-          <div class="card mb-3 box-shadow">
-            <div class="card-header">
-              <h4 class="my-0 font-weight-normal">Enterprise</h4>
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
-              <ul class="plan-contents list-unstyled mt-3 mb-4">
-                <li>30 users included</li>
-                <li>15 GB of storage</li>
-                <li>Phone and email support</li>
-                <li>Help center access</li>
-              </ul>
-              <button type="button" class="mt-auto btn btn-lg btn-block btn-primary">Contact us</button>
-            </div>
-          </div>
-          <div class="card mb-3 box-shadow">
-            <div class="card-header">
-              <h4 class="my-0 font-weight-normal">Enterprise</h4>
-            </div>
-            <div class="pricing-plan card-body d-flex flex-column">
-              <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
-              <ul class="plan-contents list-unstyled mt-3 mb-4">
-                <li><i class="fa fa-check"></i> 30 users included</li>
-                <li><i class="fa fa-check"></i> 15 GB of storage</li>
-                <li><i class="fa fa-check"></i> Phone and email support
-                  <abbr data-toggle="tooltip" data-placement="top" title="For example, one of Amazon.com, Amazon.ca or Amazon.co.uk.">
-                    <img src="img/icon-abbr-info.svg" width="15" height="15" />
-                  </abbr>
-                </li>
-                <li><i class="fa fa-check"></i> Help center access</li>
-              </ul>
-              <button type="button" class="mt-auto btn btn-lg btn-block btn-primary">Contact us</button>
+              <button type="button" class="mt-auto btn btn-lg btn-block btn-primary"><a target="_blank" href="https://m.me/arequesty">Contact Us</a></button>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- <section id="pricing-6" class="section lightblue-white" sitemeta="[object Object]" activepage="Landing">
-      <div class="container mb75 text-center">
-        <div class="col-12">
-          <h4 class="heading primary-color launchaco-builder-hoverable">Taxomator pricing for Amazon sellers</h4>
-          <p class="paragraph secondary-color launchaco-builder-hoverable">Choose a pricing plan that's right for your Amazon business, and try it for free.
-            You can switch plans at any time - or request a custom plan by contacting us directly.</p>
-        </div>
-      </div>
-      <div class="container-lrg">
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
-          </li>
-        </ul>
-        <div class="tab-content" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">adsf</div>
-          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">1234</div>
-        </div>
-        <div class="col-12">
-          <div class="card flex mobile-flex-wrap">
-            <div class="col-3 flex flex-column spread launchaco-builder-hoverable">
-              <div class="mb20">
-                <div class="text-center">
-                  <h4 class="bold primary-color">Aspiring</h4>
-                  <b class="heading primary-color">$5.99</b> <span class="paragraph secondary-color">/ mo</span>
-                </div>
-                <ul class="mt20">
-                  <li class="flex mb20">
-                    <img src="img/checkmark.svg" /><span class="span secondary-color">Up to 200 orders / month</span>
-                  </li>
-                  <li class="flex mb20">
-                    <img src="img/checkmark.svg" /> <span class="span secondary-color">1 Amazon marketplace</span>
-                  </li>
-                  <li class="flex mb20">
-                    <img src="img/checkmark.svg" /><span class="span secondary-color">Standard support</span>
-                  </li>
-                </ul>
-              </div> <a href="https://app.arequesty.com/app/billing" target="_blank" class="button mobile-text-center mt10 launchaco-builder-hoverable button__full mobile-text-center accent-bg primary-color"> <span> Get Started </span></a>
-            </div>
-            <div class="col-3 flex flex-column spread launchaco-builder-hoverable">
-              <div class="mb20">
-                <div class="text-center">
-                  <h4 class="bold primary-color">Starter</h4>
-                  <b class="heading primary-color">$14.99</b> <span class="paragraph secondary-color">/ mo</span>
-                </div>
-                <ul class="mt20">
-                  <li class="flex mb20">
-                    <img src="img/checkmark.svg" /><span class="span secondary-color">Up to 1,000 orders / month</span>
-                  </li>
-                  <li class="flex mb20">
-                    <img src="img/checkmark.svg" /><span class="span secondary-color">1 region</span>
-                  </li>
-                  <li class="flex mb20">
-                    <img src="img/checkmark.svg" /><span class="span secondary-color">Unlimited marketplaces per region</span>
-                  </li>
-                  <li class="flex mb20">
-                    <img src="img/checkmark.svg" /><span class="span secondary-color">Standard support</span>
-                  </li>
-                </ul>
-              </div> <a href="https://app.arequesty.com/app/billing" target="_blank" class="button mobile-text-center mt10 launchaco-builder-hoverable button__full mobile-text-center accent-bg primary-color"> <span> Get Started </span></a>
-            </div>
-            <div class="col-3 flex flex-column spread launchaco-builder-hoverable">
-              <div class="mb20">
-                <div class="text-center">
-                  <h4 class="bold primary-color">Standard</h4>
-                  <b class="heading primary-color">$19.99</b> <span class="paragraph secondary-color">/ mo</span>
-                </div>
-                <ul class="mt20">
-                  <li class="flex mb20">
-                    <img src="img/checkmark.svg" /><span class="span secondary-color">Up to 5,000 orders / month</span>
-                  </li>
-                  <li class="flex mb20">
-                    <img src="img/checkmark.svg" /><span class="span secondary-color">2 regions</span>
-                  </li>
-                  <li class="flex mb20">
-                    <img src="img/checkmark.svg" /><span class="span secondary-color">Unlimited marketplaces per region</span>
-                  </li>
-                  <li class="flex mb20">
-                    <img src="img/checkmark.svg" /><span class="span secondary-color">Free setup for past transactions</span>
-                  </li>
-                  <li class="flex mb20">
-                    <img src="img/checkmark.svg" /><span class="span secondary-color">Standard support</span>
-                  </li>
-                </ul>
-              </div> <a href="https://app.arequesty.com/app/billing" target="_blank" class="button mobile-text-center mt10 launchaco-builder-hoverable button__full mobile-text-center accent-bg primary-color"> <span> Get Started </span></a>
-            </div>
-            <div class="col-3 flex flex-column spread launchaco-builder-hoverable">
-              <div class="mb20">
-                <div class="text-center">
-                  <h4 class="bold primary-color">Premium</h4> 
-                  <b class="heading primary-color">$24.99</b> <span class="paragraph secondary-color">/ mo</span>
-                </div>
-                <ul class="mt20">
-                  <li class="flex mb20">
-                    <img src="img/checkmark.svg" /><span class="span secondary-color">Up to 5,000 orders / month</span>
-                  </li>
-                  <li class="flex mb20">
-                    <img src="img/checkmark.svg" /><span class="span secondary-color">2 regions</span>
-                  </li>
-                  <li class="flex mb20">
-                    <img src="img/checkmark.svg" /><span class="span secondary-color">Unlimited marketplaces per region</span>
-                  </li>
-                  <li class="flex mb20">
-                    <img src="img/checkmark.svg" /><span class="span secondary-color">Free setup for past transactions</span>
-                  </li>
-                  <li class="flex mb20">
-                    <img src="img/checkmark.svg" /><span class="span secondary-color">Standard support</span>
-                  </li>
-                </ul>
-              </div> <a href="https://app.arequesty.com/app/billing" target="_blank" class="button mobile-text-center mt10 launchaco-builder-hoverable button__full mobile-text-center accent-bg primary-color"> <span> Get Started </span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
     <footer id="footer-5" class="section text-center lightblue-black" sitemeta="[object Object]" activepage="Landing">
       <div class="container col-12">
         <nav class="mb50">
