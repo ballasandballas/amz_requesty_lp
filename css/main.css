@@ -107,6 +107,16 @@ a.nav-button {
   font-weight:700;
 }
 
+/* Underline some text */
+.underline {
+  text-decoration: underline;
+}
+
+.clean-link {
+  color:inherit;
+  text-decoration:none;
+}
+
 /* Container sizes */
 .container,.container-lrg,.container-sml {
   margin:auto;
