@@ -166,7 +166,6 @@ a.nav-button {
   border-radius: 100%;
   width: 100%;
   height: auto;
-  margin-right: 15px;
 }
 
 .testimonial__details {
@@ -174,6 +173,13 @@ a.nav-button {
   width: 75%;
   padding-left: 15px;
   float: left;
+  margin-top: 1rem;
+}
+
+.testimonial__details_he {
+  display: block;
+  width: 75%;
+  padding-left: 15px;
   margin-top: 1rem;
 }
 
