@@ -79,6 +79,65 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/* Configure font-friendly for all elements on the page */
+.font-friendly {
+  font-family:Montserrat,sans-serif;
+}
+
+/* Other fonts to configure (maybe in the future) */
+/*.font-elegant *{font-family:Montserrat,sans-serif}.font-elegant .bold,.font-elegant .heading,.font-elegant .heading-lrg,.font-elegant .heading-sml{font-family:Spectral,serif}.font-friendly *{font-family:Montserrat,sans-serif}.font-hacker *{font-family:'Roboto Mono',monospace}.font-hacker .heading,.font-hacker .heading-lrg,.font-hacker .heading-sml{font-family:Roboto,sans-serif}.font-modern *{font-family:Poppins,sans-serif}.font-modern .heading,.font-modern .heading-lrg,.font-modern .heading-sml{font-weight:300}.font-neutral *{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}.font-serious *{font-family:Montserrat,sans-serif}.font-serious .bold,.font-serious .heading,.font-serious .heading-lrg,.font-serious .heading-sml{font-family:Eczar,serif}* */
+
+/* Logo */
+a.logo {
+  text-decoration: none;
+}
+
+/* Button links in navigation bar */
+a.nav-button {
+  text-decoration: none;
+}
+
+/* Make sure headers are bold (unlike in Bootstrap, where font-weight:500 */
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
+  font-weight:700;
+}
+
+/* For short bold texts on the page */
+.bold-inline {
+  font-weight:700;
+}
+
+/* Underline some text */
+.underline {
+  text-decoration: underline;
+}
+
+.clean-link {
+  color:inherit;
+  text-decoration:none;
+}
+
+/* Container sizes */
+.container,.container-lrg,.container-sml {
+  margin:auto;
+  position:relative;
+  width:100%
+}
+.container-lrg {
+  max-width:1020px
+}
+.container {
+  max-width:880px
+}
+.container-sml {
+  max-width:470px
+}
+.section {
+  padding:60px 0;
+  overflow:hidden;
+  position:relative
+}
+
 /* Testimonials */
 .testimonial {
   min-height: 180px;
@@ -107,7 +166,6 @@
   border-radius: 100%;
   width: 100%;
   height: auto;
-  margin-right: 15px;
 }
 
 .testimonial__details {
@@ -115,6 +173,13 @@
   width: 75%;
   padding-left: 15px;
   float: left;
+  margin-top: 1rem;
+}
+
+.testimonial__details_he {
+  display: block;
+  width: 75%;
+  padding-left: 15px;
   margin-top: 1rem;
 }
 
@@ -186,4 +251,55 @@ hr {
   margin-bottom: 1rem;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 320px;
+}
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.pricing-plan .card-header {
+  text-align: center;
+}
+
+.pricing-plan .card-title {
+  text-align: center;
+}
+
+.pricing-plan .plan-contents i.fa.fa-check {
+  color: #01d8fd;
+  /* float: left; */
+}
+
+.pricing-plan .plan-contents i.fa.fa-times {
+  color: #e76234;
+  /* float: left; */
+}
+
+.pricing-plan li abbr a {
+  color: #01d8fd;
+}
+
+.pricing-plan .plan-contents li {
+  padding:5px 10px;
+  font-size:15px;
+  letter-spacing: -0.2px;
+  border-bottom:1px solid #eee;
+  line-height:1.5;
+}
+
+.pricing-plan button a {
+  text-decoration: none;
+}
+
+.pricing-plan .card-item-text {
+  padding-left: 5px;
 }
